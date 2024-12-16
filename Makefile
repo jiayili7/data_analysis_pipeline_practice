@@ -1,5 +1,11 @@
 all: report/count_report.html
 
+results/figure:
+	mkdir -p results/figure
+
+results:
+	mkdir -p results
+
 results/isles.dat: data/isles.txt scripts/wordcount.py
 	python scripts/wordcount.py \
 		--input_file=data/isles.txt \
@@ -53,5 +59,5 @@ clean:
 	rm -f results/figure/isles.png results/figure/abyss.png results/figure/last.png results/figure/sierra.png
 	rm -rf report/count_report.html
 
-results/figure:
-	mkdir -p results/figure
+# results/figure:
+# 	mkdir -p results/figure
