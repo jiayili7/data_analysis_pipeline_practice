@@ -28,7 +28,16 @@ Run the analysis:
 
 ```
 bash runall.sh
+# or
+
+make all
 ```
+Then remove with 
+
+```
+make clean
+```
+
 
 ### Exercise:
 
