@@ -1,3 +1,16 @@
+# Makefile
+# Jiayi Li, Dec 2024
+# Note: Partially adapted from  Tiffany Timbers, Nov 2018 examples
+
+
+# example usage:
+# make all
+# make dats
+# make clean or make clean-all
+# make clean-dats
+# make clean-figs
+
+
 .PHONY: all dats figs clean-dats clean-figs clean-all
 
 # run entire analysis
